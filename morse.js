@@ -1,6 +1,7 @@
 var morse = require('morse-node').create();
- 
-var encodedmsg = morse.encode('SOS, Kai was here');
+
+console.log("enter a message to be converted into morse: " + process.argv[2]);
+var encodedmsg = morse.encode(process.argv[2]);
 console.log(encodedmsg);
  
 var decodedmsg = morse.decode(encodedmsg);
